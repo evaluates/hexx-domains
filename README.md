@@ -22,7 +22,7 @@ It is a part of [hexx] scaffolders collection.
 
 To scaffold a model start the generator:
 
-```
+```ruby
 Hexx::Domains::CLI.start %w(
   gemname -r 2.1 -u username -e user@example.com -a Name Family -d -b -g
 )
