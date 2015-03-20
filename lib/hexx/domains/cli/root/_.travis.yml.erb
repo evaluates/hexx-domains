@@ -1,0 +1,8 @@
+---
+language: ruby
+bundler_args: --without metrics
+script: rake test:coverage:run
+rvm:
+<% rubies.each do |item| -%>
+  - <%= item %>
+<% end -%>

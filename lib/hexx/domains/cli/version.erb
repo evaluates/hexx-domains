@@ -1,0 +1,19 @@
+# encoding: utf-8
+<% tabs = 0 -%>
+<% project.namespaces.each do |item| -%>
+
+<%= "  " * tabs %>module <%= item %>
+<% tabs += 1 -%>
+<% end -%>
+
+<%= "  " * tabs %>module <%= project.const %>
+
+<%= "  " * tabs %>  # The semantic version of the module.
+<%= "  " * tabs %>  # @see http://semver.org/ Semantic versioning 2.0
+<%= "  " * tabs %>  VERSION = "0.0.1-alpha".freeze
+
+<%= "  " * tabs %>end # module <%= project.const %>
+<% project.namespaces.reverse.each do |item| -%>
+<% tabs -= 1 %>
+<%= "  " * tabs %>end # module <%= item %>
+<% end -%>

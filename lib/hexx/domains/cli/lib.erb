@@ -1,0 +1,23 @@
+# encoding: utf-8
+<% tabs = 0 -%>
+<% project.namespaces.each do |item| -%>
+
+<%= "  " * tabs %># @todo
+<%= "  " * tabs %>module <%= item %>
+<% tabs += 1 -%>
+<% end -%>
+
+<%= "  " * tabs %>require_relative "<%= project.path %>/version"
+<% if project.namespaces.any? -%>
+<%= "  " * tabs %>require_relative "<%= project.path %>"
+<% else -%>
+
+<%= "  " * tabs %># Namespace for the code of the '<%= project.file %>' gem
+<%= "  " * tabs %>module <%= project.const %>
+
+<%= "  " * tabs %>end # module <%= project.const %>
+<% end -%>
+<% project.namespaces.reverse.each do |item| -%>
+<% tabs -= 1 %>
+<%= "  " * tabs %>end # module <%= item %>
+<% end -%>
