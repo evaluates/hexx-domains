@@ -1,4 +1,5 @@
-# Hexx
+<%= project.type %>
+===================
 
 [![Gem Version](https://img.shields.io/gem/v/<%= project.file %>.svg?style=flat)][gem]
 [![Build Status](https://img.shields.io/travis/<%= user %>/<%= project.file %>/master.svg?style=flat)][travis]
@@ -16,11 +17,8 @@
 
 @todo Describe the module
 
-## Usage
-
-@todo Describe the base usage of the module
-
-## Installation
+Installation
+------------
 
 Add this line to your application's Gemfile:
 
@@ -41,13 +39,27 @@ Or add it manually:
 gem install <%= project.file %>
 ```
 
-## Compatibility
+Usage
+-----
 
-Tested under rubies compatible to MRI <%= ruby %>+.
+@todo Describe howto use the module
 
-Uses [RSpec] 3.0+ for testing and [<%= project.file %>-suit] for dev/test tools collection.
+Compatibility
+-------------
 
-## Contributing
+Tested under rubies compatible to rubies compatible to API <%= ruby %>+:
+
+* MRI <%= ruby %>+
+* Rubinius (mode <%= ruby %>+)
+* JRuby (mode <%= ruby %>+)
+
+Uses [RSpec] 3.0+ for testing and [hexx-suit] for dev/test tools collection.
+
+[RSpec]: http://rspec.info/
+[hexx-suit]: http://github.com/nepalez/hexx-suit
+
+Contributing
+------------
 
 * Fork the project.
 * Read the [STYLEGUIDE](config/metrics/STYLEGUIDE).
@@ -59,6 +71,7 @@ Uses [RSpec] 3.0+ for testing and [<%= project.file %>-suit] for dev/test tools 
   in a commit by itself I can ignore when I pull)
 * Send me a pull request. Bonus points for topic branches.
 
-## License
+License
+-------
 
 See the [MIT LICENSE](LICENSE).
