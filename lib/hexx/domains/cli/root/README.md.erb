@@ -1,4 +1,5 @@
-# Hexx
+<%= project.type %>
+===================
 
 [![Gem Version](https://img.shields.io/gem/v/<%= project.file %>.svg?style=flat)][gem]
 [![Build Status](https://img.shields.io/travis/<%= user %>/<%= project.file %>/master.svg?style=flat)][travis]
@@ -14,13 +15,15 @@
 [travis]: https://travis-ci.org/<%= user %>/<%= project.file %>
 [inch]: https://inch-ci.org/github/<%= user %>/<%= project.file %>
 
-@todo Describe the module
+@todo: describe the module
 
-## Usage
+Synopsis
+--------
 
-@todo Describe the base usage of the module
+@todo Describe the base use
 
-## Installation
+Installation
+------------
 
 Add this line to your application's Gemfile:
 
@@ -41,13 +44,18 @@ Or add it manually:
 gem install <%= project.file %>
 ```
 
-## Compatibility
+Compatibility
+-------------
 
-Tested under rubies compatible to MRI <%= ruby %>+.
+Tested under rubies [compatible to MRI <%= ruby %>+](.travis.yml).
 
-Uses [RSpec] 3.0+ for testing and [<%= project.file %>-suit] for dev/test tools collection.
+Uses [RSpec] 3.0+ for testing and [hexx-suit] for dev/test tools collection.
 
-## Contributing
+[RSpec]: http://rspec.org
+[hexx-suit]: https://github.com/nepalez/hexx-suit
+
+Contributing
+------------
 
 * Fork the project.
 * Read the [STYLEGUIDE](config/metrics/STYLEGUIDE).
@@ -59,6 +67,7 @@ Uses [RSpec] 3.0+ for testing and [<%= project.file %>-suit] for dev/test tools 
   in a commit by itself I can ignore when I pull)
 * Send me a pull request. Bonus points for topic branches.
 
-## License
+License
+-------
 
 See the [MIT LICENSE](LICENSE).
