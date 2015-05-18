@@ -7,3 +7,8 @@ rvm:
 <% rubies.each do |item| -%>
   - <%= item %>
 <% end -%>
+matrix:
+  allow_failures:
+<% rubies.select { |item| item.include? "-head" }.each do |item| -%>
+    - rvm: <%= item %>
+<% end -%>
