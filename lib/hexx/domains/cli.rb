@@ -167,12 +167,25 @@ module Hexx
       def rubies
         {
           "1.9" => [
-            "1.9.3", "ruby-head",
-            "rbx-2 --1.9", "rbx-2 --2.0",
-            "jruby-1.7-19mode", "jruby-head-21mode"
+            "'1.9.3'", "'2.2'", "ruby-head",
+            "rbx-2 --1.9", "rbx-2 --2.2",
+            "jruby-1.7-19mode", "jruby-9.0.0.0.pre2", "jruby-head"
           ],
-          "2.0" => ["2.0", "ruby-head", "rbx-2 --2.0", "jruby-head-20mode"],
-          "2.1" => ["2.1", "ruby-head", "rbx-2 --2.0", "jruby-head-21mode"]
+          "2.0" => [
+            "'2.0'", "'2.2'", "ruby-head",
+            "rbx-2 --2.0", "rbx-2 --2.2",
+            "jruby-9.0.0.0.pre2", "jruby-head"
+          ],
+          "2.1" => [
+            "'2.1'", "'2.1'", "ruby-head",
+            "rbx-2 --2.1", "rbx-2 --2.2",
+            "jruby-9.0.0.0.pre2", "jruby-head"
+          ],
+          "2.2" => [
+            "'2.2'", "ruby-head",
+            "rbx-2 --2.2",
+            "jruby-9.0.0.0.pre2", "jruby-head"
+          ]
         }[ruby]
       end
 
